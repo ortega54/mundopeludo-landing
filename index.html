@@ -90,8 +90,8 @@
               <a class="btn btn--ghost" href="#incluye">Ver qué incluye</a>
             </div>
             <p class="hero__note">
-              <strong>Precio especial por inauguración</strong> del lanzamiento y de la página en Facebook. Detrás hay una
-              serie de investigación; esperamos que el contenido sea de tu agrado y nos dejes tu opinión para seguir
+              <strong>Precio especial por inauguración</strong> del lanzamiento y de la página en Facebook. Es material
+              educativo de nuestra autoría; esperamos que el contenido sea de tu agrado y nos dejes tu opinión para seguir
               mejorando.
             </p>
           </div>
@@ -222,8 +222,8 @@
         <div class="container">
           <h2 class="section__title">Por qué este pack tiene sentido</h2>
           <p class="section__intro">
-            Pensado para dueños que quieren resultados claros: mejor comunicación, más seguridad en el día a día y
-            recursos cuando importa.
+            Pensado para dueños que buscan mejorar la comunicación con su mascota, con recursos prácticos para el día a
+            día. Los resultados dependen de cada caso y del uso del material.
           </p>
           <ul class="benefits">
             <li class="benefit">
@@ -252,9 +252,10 @@
           </p>
           <div class="prose-block__text">
             <p>
-              Este trabajo se apoya en una <strong>serie de investigación</strong> que hemos llevado a cabo con
-              dedicación y rigor. Nuestra ilusión es que el contenido sea <strong>de tu agrado</strong>, que os sea útil en el día a día
-              con vuestra mascota y que <strong>vuestras opiniones nos ayuden a mejorar</strong> con el tiempo.
+              Este trabajo recoge <strong>documentación propia y experiencia</strong> aplicada con dedicación. No es un
+              estudio clínico ni sustituye el criterio profesional cuando haga falta. Nuestra ilusión es que el contenido
+              sea <strong>de tu agrado</strong>, útil en el día a día con vuestra mascota y que
+              <strong>vuestras opiniones nos ayuden a mejorar</strong> con el tiempo.
             </p>
             <p>
               <strong>Tu opinión nos importa.</strong> Con vuestros comentarios podremos plantear
@@ -317,31 +318,13 @@
           <h2 class="section__title">Tu oferta</h2>
           <p class="section__intro offer__intro">
             <strong>Precio de inauguración</strong> por ser obra nuestra y por el lanzamiento conjunto con la página. Un
-            solo pago con acceso completo al pack digital. Configura el precio y el enlace de Hotmart cuando los tengas
-            definitivos.
+            solo pago con acceso completo al pack digital. El <strong>importe final, moneda y condiciones</strong> se
+            confirman siempre en el checkout oficial de Hotmart antes de pagar.
           </p>
-          <div class="offer__countdown" aria-labelledby="countdown-heading">
-            <p id="countdown-heading" class="offer__countdown-label">Tiempo restante (oferta por 7 días)</p>
-            <div class="offer__countdown-grid" role="timer" aria-live="polite">
-              <div class="offer__countdown-cell">
-                <span class="offer__countdown-value" id="countdown-days">07</span>
-                <span class="offer__countdown-unit">Días</span>
-              </div>
-              <div class="offer__countdown-cell">
-                <span class="offer__countdown-value" id="countdown-hours">00</span>
-                <span class="offer__countdown-unit">Horas</span>
-              </div>
-              <div class="offer__countdown-cell">
-                <span class="offer__countdown-value" id="countdown-mins">00</span>
-                <span class="offer__countdown-unit">Min</span>
-              </div>
-              <div class="offer__countdown-cell">
-                <span class="offer__countdown-value" id="countdown-secs">00</span>
-                <span class="offer__countdown-unit">Seg</span>
-              </div>
-            </div>
-            <p class="offer__countdown-expired" id="countdown-expired" hidden>El plazo de esta oferta ha finalizado.</p>
-          </div>
+          <p class="offer__urgency-note" role="note">
+            Oferta de lanzamiento por tiempo limitado: la vigencia del precio y las promociones aplicables las establece
+            Hotmart en la página de pago; revisa allí los datos actualizados.
+          </p>
           <div class="offer__layout">
             <div class="offer__box">
               <p class="offer__price">
@@ -387,7 +370,13 @@
                 <li>Reto 21 días y guía de compras (PDF)</li>
               </ul>
               <a class="btn btn--wide checkout-link" href="#" id="hotmart-link">Comprar en Hotmart</a>
-              <p class="offer__hint">Al hacer clic irás al checkout seguro de Hotmart.</p>
+              <p class="offer__hint">
+                Al hacer clic irás al checkout seguro de Hotmart. La compra queda sujeta a los
+                <a href="https://www.hotmart.com/legal/es/purchase-terms" target="_blank" rel="noopener noreferrer"
+                  >términos generales de compra</a
+                >
+                de Hotmart.
+              </p>
             </div>
           </div>
         </div>
@@ -397,7 +386,9 @@
         <div class="container guarantee">
           <div class="guarantee__box">
             <p class="guarantee__text">
-              Garantía de 7 Días - Si no estás satisfecho, devolvemos tu dinero sin preguntas.
+              <strong>Garantía según el producto en Hotmart.</strong> El plazo de desistimiento o reembolso (p. ej. 7, 15
+              o 30 días) y el procedimiento oficial los indica Hotmart en la ficha y en el checkout. Para solicitar una
+              devolución debes usar el proceso de comprador en Hotmart dentro del plazo aplicable a tu compra.
             </p>
           </div>
         </div>
@@ -424,6 +415,14 @@
           >
           <a href="#inicio">Inicio</a>
         </nav>
+        <p class="footer__legal">
+          El contenido del pack es <strong>formativo y de divulgación</strong>; no sustituye diagnóstico, tratamiento ni
+          indicación de un veterinario. Las decisiones sobre la salud de tu mascota son tu responsabilidad.
+        </p>
+        <p class="footer__legal footer__legal--muted">
+          Compra procesada por Hotmart. Precio, moneda, garantía y reembolsos según lo indicado en el checkout y en la
+          documentación del producto.
+        </p>
       </div>
     </footer>
 
@@ -454,64 +453,6 @@
           { once: true }
         );
       }
-
-      (function () {
-        var STORAGE_KEY = "mundoPeludo_oferta_fin";
-        var SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
-        var end = null;
-        try {
-          var stored = localStorage.getItem(STORAGE_KEY);
-          if (stored) end = parseInt(stored, 10);
-          if (!end || isNaN(end)) {
-            end = Date.now() + SEVEN_DAYS_MS;
-            localStorage.setItem(STORAGE_KEY, String(end));
-          }
-        } catch (e) {
-          end = Date.now() + SEVEN_DAYS_MS;
-        }
-
-        var elDays = document.getElementById("countdown-days");
-        var elHours = document.getElementById("countdown-hours");
-        var elMins = document.getElementById("countdown-mins");
-        var elSecs = document.getElementById("countdown-secs");
-        var elExpired = document.getElementById("countdown-expired");
-        var elHeading = document.getElementById("countdown-heading");
-        var elGrid = document.querySelector(".offer__countdown-grid");
-        var wrap = document.querySelector(".offer__countdown");
-        if (!elDays || !wrap) return;
-
-        function pad2(n) {
-          return n < 10 ? "0" + n : String(n);
-        }
-
-        function tick() {
-          var left = end - Date.now();
-          if (left <= 0) {
-            elDays.textContent = "00";
-            elHours.textContent = "00";
-            elMins.textContent = "00";
-            elSecs.textContent = "00";
-            if (elExpired) elExpired.hidden = false;
-            if (elHeading) elHeading.hidden = true;
-            if (elGrid) elGrid.hidden = true;
-            return;
-          }
-          var secs = Math.floor(left / 1000);
-          var d = Math.floor(secs / 86400);
-          secs %= 86400;
-          var h = Math.floor(secs / 3600);
-          secs %= 3600;
-          var m = Math.floor(secs / 60);
-          var s = secs % 60;
-          elDays.textContent = pad2(Math.min(d, 99));
-          elHours.textContent = pad2(h);
-          elMins.textContent = pad2(m);
-          elSecs.textContent = pad2(s);
-        }
-
-        tick();
-        setInterval(tick, 1000);
-      })();
     </script>
   </body>
 </html>
