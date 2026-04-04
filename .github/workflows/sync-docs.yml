@@ -1,0 +1,42 @@
+# Copia la web desde la raíz del repo a /docs (origen típico de GitHub Pages: rama main, carpeta /docs)
+name: Sync docs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "styles.css"
+      - "images/**"
+      - "media/**"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Copiar sitio a docs/
+        run: |
+          mkdir -p docs
+          cp index.html styles.css docs/
+          cp .nojekyll docs/ 2>/dev/null || touch docs/.nojekyll
+          rm -rf docs/images docs/media
+          cp -r images media docs/
+
+      - name: Commit y push si hay cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --staged --quiet; then
+            echo "Sin cambios en docs/"
+          else
+            git commit -m "chore: sincronizar docs para GitHub Pages"
+            git push
+          fi
