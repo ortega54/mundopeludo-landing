@@ -1,7 +1,7 @@
 """
 Genera media/video-ventas.mp4 con voz (Edge TTS), portadas del pack y diapositivas
-de marca. Ajustes para sonar más natural: voz es-ES-XimenaNeural, ritmo lento,
-volumen suave, y pausas cortas entre frases (pydub + ffmpeg de imageio_ffmpeg).
+de marca. Ritmo cercano al habla natural, volumen con presencia, pausas breves
+entre frases (pydub + ffmpeg de imageio_ffmpeg).
 
 Requiere: pip install -r scripts/requirements.txt
 Ejecutar: python scripts/generar_video_ventas.py
@@ -26,17 +26,17 @@ IMAGES_DIR = ROOT / "images"
 OUT_FILE = MEDIA_DIR / "video-ventas.mp4"
 TMP_DIR = Path(__file__).resolve().parent / "_tmp_audio"
 
-# Ximena (España): suele sonar más conversacional que otras neurales en castellano.
-# Alternativas: "es-ES-AlvaroNeural" (voz masculina), "es-ES-ElviraNeural".
-VOICE = "es-ES-XimenaNeural"
-# Más lento = menos “rollo” continuo de máquina (prueba entre -15% y -22%)
-TTS_RATE = "-20%"
-# Tono suave; evita picos demasiado agudos
-TTS_PITCH = "-2Hz"
-# Un poco más de presencia sin gritar
-TTS_VOLUME = "+6%"
-# Pausa entre frases al unir audios (milisegundos); respiración más humana
-TTS_PAUSE_MS = 260
+# Elvira (España): tono más cálido y menos “asistente” que otras; alternativas:
+# "es-ES-XimenaNeural", "es-ES-AlvaroNeural" (masculina), "es-MX-DaliaNeural" (latam).
+VOICE = "es-ES-ElviraNeural"
+# Ritmo: -20% sonaba muy lento y robótico; ~-6% se acerca a una locución natural.
+TTS_RATE = "-6%"
+# Neutro; tonos muy bajos (-2Hz) + ritmo lento reforzaban sensación artificial.
+TTS_PITCH = "+0Hz"
+# Más presencia (antes +6% se escuchaba muy suave en el vídeo final).
+TTS_VOLUME = "+14%"
+# Pausas más cortas entre frases = menos troceado “de robot”.
+TTS_PAUSE_MS = 190
 
 W, H = 1280, 720
 
