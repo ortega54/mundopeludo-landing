@@ -26,17 +26,15 @@ IMAGES_DIR = ROOT / "images"
 OUT_FILE = MEDIA_DIR / "video-ventas.mp4"
 TMP_DIR = Path(__file__).resolve().parent / "_tmp_audio"
 
-# Elvira (España): tono más cálido y menos “asistente” que otras; alternativas:
-# "es-ES-XimenaNeural", "es-ES-AlvaroNeural" (masculina), "es-MX-DaliaNeural" (latam).
-VOICE = "es-ES-ElviraNeural"
-# Ritmo: -20% sonaba muy lento y robótico; ~-6% se acerca a una locución natural.
-TTS_RATE = "-6%"
-# Neutro; tonos muy bajos (-2Hz) + ritmo lento reforzaban sensación artificial.
+# Ximena (España): suele sonar menos “asistente virtual” que Elvira en locuciones largas.
+# Otras: "es-ES-AlvaroNeural" (voz masculina, tono más documental), "es-MX-DaliaNeural" (latam).
+VOICE = "es-ES-XimenaNeural"
+# Ritmo neutro: ritmos lentos (-6%…) reforzaban sensación de voz sintética.
+TTS_RATE = "+0%"
 TTS_PITCH = "+0Hz"
-# Más presencia (antes +6% se escuchaba muy suave en el vídeo final).
 TTS_VOLUME = "+14%"
-# Pausas más cortas entre frases = menos troceado “de robot”.
-TTS_PAUSE_MS = 190
+# Pausas cortas entre frases = menos cadencia de contestador/IVR.
+TTS_PAUSE_MS = 110
 
 W, H = 1280, 720
 
@@ -324,7 +322,7 @@ def main() -> None:
     file_map = _build_file_map()
     AudioFileClip, ImageClip, concatenate_videoclips = _ensure_moviepy()
 
-    print("Generando audios (Edge TTS: ritmo pausado + pausas entre frases)...")
+    print("Generando audios (Edge TTS: Ximena + ritmo natural + pausas cortas entre frases)...")
     audio_files: list[Path] = []
     for i, part in enumerate(SCRIPT_PARTS):
         mp3 = TMP_DIR / f"part_{i:02d}.mp3"
