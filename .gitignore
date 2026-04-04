@@ -1,0 +1,8 @@
+scripts/_tmp_audio/
+scripts/_tmp_audio/**
+__pycache__/
+*.pyc
+.env
+.DS_Store
+Thumbs.db
+*.log
