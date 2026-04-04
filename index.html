@@ -402,8 +402,14 @@
       var precioEl = document.getElementById("precio-display");
       if (precioEl) precioEl.textContent = PRECIO_TEXTO || "—";
 
+      var VIDEO_VENTAS_SPEED = 1.25;
       var videoVentas = document.getElementById("video-ventas-player");
       if (videoVentas) {
+        function applyVideoSpeed() {
+          videoVentas.playbackRate = VIDEO_VENTAS_SPEED;
+        }
+        applyVideoSpeed();
+        videoVentas.addEventListener("loadedmetadata", applyVideoSpeed);
         videoVentas.addEventListener(
           "play",
           function () {
