@@ -3,3 +3,7 @@ edge-tts>=6.1.0
 numpy>=1.24.0
 Pillow>=10.0.0
 pydub>=0.25.1
+
+# Opcional: generar PDFs corregidos (python scripts/generar_pdfs_corregidos.py)
+pypdf>=6.0
+fpdf2>=2.8

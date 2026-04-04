@@ -56,7 +56,7 @@ SCENES: List[Tuple[str, str, str]] = [
     ("file", "metodo-perro-habla.png", ""),
     ("file", "codigo-maestro.png", ""),
     ("slide", "Bonus PDF + reto 21 días", "Guías útiles y guía de compras"),
-    ("slide", "Dos evaluaciones", "Aprende con criterio, no solo de memoria"),
+    ("slide", "Reto 21 días", "Plan práctico para aplicar el método con tu mascota"),
     ("slide", "Obra nuestra", "Precio de inauguración · honestidad"),
     ("slide", "Tu opinión importa", "Revisiones · temas · promociones · sorteos"),
     ("slide", "Vuestras mascotas", "Protagonistas: fotos e historias reales"),
@@ -64,7 +64,7 @@ SCENES: List[Tuple[str, str, str]] = [
     ("slide", "Gracias por confiar", "Primeros seguidores que construyen con nosotros"),
     ("slide", "Vosotros decís", "Encuestas: salud, entreno, convivencia…"),
     ("slide", "Consejos que suman", "Comentarios para mejorar el material"),
-    ("slide", "Compra en Hotmart", "PDF · vídeos · evaluaciones · te leemos"),
+    ("slide", "Compra en Hotmart", "PDF · vídeos · reto y guías · te leemos"),
 ]
 
 SCRIPT_PARTS = [
@@ -78,8 +78,7 @@ con ideas sobre lenguaje y botones de comunicación, cuando encajan en tu caso."
 y te acompañamos en el entrenamiento y en la convivencia de verdad.""",
     """Además vienen los bonus en PDF: longevidad, primeros auxilios, vocabulario útil, según tu compra.
 Y el reto de veintiún días, más una guía de compras, para aplicar sin adivinar.""",
-    """Y hay algo que nos importa mucho: dos evaluaciones, con nivel distinto. Una para asentar bases, y otra para exigirte un poco más,
-para conectar ideas y pensar como en el día a día con tu animal.""",
+    """Con el calendario del reto y las guías, pasas de leer a hacer: pasos concretos para que el método se note en el día a día con tu mascota.""",
     """Todo esto es obra nuestra. Por eso podemos ofrecer un precio especial de inauguración.
 Celebramos el lanzamiento, y el arranque de la comunidad Mundo Peludo, con honestidad.""",
     """Tu opinión nos importa de verdad. Con vuestros comentarios podremos plantear nuevas revisiones del material,
@@ -96,7 +95,7 @@ Así los contenidos y las ediciones futuras pueden ir más alineados con vosotro
     """Compartiremos consejos prácticos. Leeremos opiniones. Y tendremos en cuenta los comentarios que suman,
 para revisar el material, profundizar donde haga falta, y plantear promociones justas. También, cuando podamos, libros gratis para seguidores en sorteos o premios.""",
     """Soñamos con ver vuestras mascotas en la página. Creemos que compartir con respeto mejora un poco el mundo,
-empezando por quienes nos dan la patita. Si te encaja, en Hotmart completas la compra: PDF, vídeos del pack y las dos evaluaciones.
+empezando por quienes nos dan la patita. Si te encaja, en Hotmart completas la compra: PDF y vídeos del pack, más las guías y el reto.
 Esperamos que nuestra autoría sea de tu agrado. Déjanos comentarios, y cuéntanos qué te gustaría ver después. Gracias por estar ahí.""",
 ]
 
