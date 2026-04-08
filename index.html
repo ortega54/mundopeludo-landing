@@ -69,7 +69,9 @@
           <a href="#garantia">Garantía</a>
           <a href="#oferta">Oferta</a>
         </nav>
-        <a class="btn btn--small checkout-link" href="#">Quiero el método</a>
+        <a class="btn btn--small btn--yell checkout-link" href="#"
+          ><span class="btn__label">Quiero el método ya</span> <span class="btn__emoji" aria-hidden="true">🐶</span></a
+        >
       </div>
     </header>
 
@@ -79,6 +81,9 @@
           <div class="hero__copy">
             <p class="eyebrow">Pack digital · Método + guías + reto 21 días</p>
             <h1>El método para tener un perro más obediente sin gritos ni castigos</h1>
+            <p class="hero__hook">
+              Si tu perro no te obedece y te está desesperando… <strong>esto es para ti.</strong>
+            </p>
             <p class="hero__lead">
               Aprende a <strong>trabajar ladridos, conductas difíciles y desobediencia</strong> con pasos claros y
               técnicas que puedes aplicar en casa. Los resultados dependen de cada perro y de la constancia — aquí tienes
@@ -97,8 +102,9 @@
               </p>
             </div>
             <div class="hero__cta-primary">
-              <a class="btn btn--large btn--cta checkout-link" href="#"
-                >Quiero que mi perro me obedezca ya <span class="btn__emoji" aria-hidden="true">🐶</span></a
+              <a class="btn btn--large btn--cta btn--yell checkout-link" href="#"
+                ><span class="btn__label">Quiero que mi perro me obedezca ya</span>
+                <span class="btn__emoji" aria-hidden="true">🐶🔥</span></a
               >
             </div>
             <p class="hero__sub">
@@ -110,9 +116,9 @@
               <a class="btn btn--ghost" href="#incluye">Qué incluye el pack</a>
             </div>
             <p class="hero__note">
-              <strong>Oferta de lanzamiento — plazas al precio actual mientras dure la promoción.</strong> El importe y la
-              vigencia los confirma Hotmart en el checkout. Si no te encaja, puedes gestionar reembolso según las condiciones
-              que verás <strong>antes de pagar</strong> (plazo y país según Hotmart).
+              <strong>Oferta por tiempo limitado</strong> — el precio de lanzamiento puede cambiar sin aviso previo en
+              Hotmart. <strong>Mejor decidir hoy:</strong> en el checkout verás importe, moneda y plazo de garantía antes de
+              pagar.
             </p>
           </div>
           <div class="hero__visual">
@@ -367,37 +373,60 @@
       <section class="section" id="garantia">
         <div class="container guarantee">
           <div class="guarantee__box guarantee__box--strong">
-            <p class="guarantee__kicker">Garantía que sustituye a las reseñas (por ahora)</p>
+            <p class="guarantee__kicker">Garantía y reembolso</p>
             <p class="guarantee__text">
-              <strong>No compras a ciegas.</strong> La compra va por <strong>Hotmart</strong>: antes de pagar verás el
-              <strong>precio, la moneda y las condiciones de reembolso o desistimiento</strong> que apliquen a tu país y a
-              este producto. Si el pack no encaja, puedes <strong>gestionar la devolución por los canales oficiales de
-              comprador</strong> dentro del plazo que indique Hotmart (no inventamos aquí “7 días” fijos: el número exacto
-              sale en el checkout).
+              Todo el detalle de plazos y cómo pedir la devolución lo marca <strong>Hotmart</strong> en tu compra. Resumen
+              visible también en la <a href="#oferta">oferta</a> — no pagas a ciegas.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="section" id="oferta">
+      <section class="section section--offer" id="oferta">
         <div class="container offer">
           <h2 class="section__title">Tu oferta — compra ahora, empieza hoy</h2>
+          <p class="offer__trust-bar" role="status">
+            <strong>Pago 100&nbsp;% en Hotmart.</strong> Esta web (aunque esté en GitHub Pages) <strong>no cobra ni guarda</strong>
+            tu tarjeta: solo te lleva al checkout oficial. Ahí ves precio, moneda y condiciones antes de pagar.
+          </p>
           <p class="section__intro offer__intro">
             <strong>Precio de inauguración</strong> por ser obra nuestra y por el lanzamiento con la comunidad. Un solo
             pago, acceso completo al pack digital. El <strong>importe final y la moneda</strong> los confirma Hotmart en la
-            página de pago antes de que pagues.
+            página de pago.
           </p>
-          <p class="offer__urgency-note" role="note">
-            <strong>⏳ Precio especial por lanzamiento</strong> — puede cambiar cuando Hotmart cierre la promoción o
-            actualice la oferta. Si estás leyendo esto, <strong>mejor decidir hoy</strong> y revisar el número final en el
-            checkout.
+          <p class="offer__urgency-note offer__urgency-note--hot" role="note">
+            <strong>Oferta disponible por tiempo limitado.</strong> El precio de lanzamiento puede subir o cerrarse cuando
+            Hotmart actualice la promoción. Si estás aquí, <strong>no dejes el pack para “después”</strong> — revisa el
+            precio en el checkout y decide hoy.
           </p>
+
+          <div class="offer__you-get">
+            <h3 class="offer__you-get-title">¿Qué recibirás exactamente?</h3>
+            <ul class="offer__you-get-list">
+              <li><strong>Ebooks paso a paso</strong> (PDF) — método y profundidad sobre la mente canina</li>
+              <li><strong>Técnicas prácticas</strong> que puedes aplicar en casa, sin rodeos</li>
+              <li><strong>Tres vídeos cortos</strong> para ver el enfoque en acción</li>
+              <li><strong>Reto 21 días + guía de compras</strong> — del “lo leí” al “lo hago”</li>
+              <li><strong>Bonus en PDF</strong> (guías Mundo Peludo según tu compra)</li>
+            </ul>
+          </div>
+
           <div class="offer__layout">
             <div class="offer__box">
               <p class="offer__price">
                 <span class="offer__amount" id="precio-display">—</span>
                 <span class="offer__term"> / pago único</span>
               </p>
+
+              <div class="offer__guarantee-badge">
+                <p class="offer__guarantee-badge-title">Garantía visible — compra con tranquilidad</p>
+                <p class="offer__guarantee-badge-text">
+                  Si el material <strong>no es lo que esperabas</strong>, puedes solicitar <strong>reembolso según las
+                  condiciones de Hotmart</strong>. En muchos productos digitales el plazo para desistir es de
+                  <strong>hasta 7 días</strong> desde la compra — <strong>el plazo exacto y el procedimiento salen en la
+                  página de pago antes de que pagues</strong> (pueden variar por país o normativa).
+                </p>
+              </div>
 
               <div class="offer__focus">
                 <h3 class="offer__subhead">Más que leer: llevarlo a la práctica</h3>
@@ -408,7 +437,7 @@
                 </p>
               </div>
 
-              <h3 class="offer__list-title">Todo lo incluido en el pack</h3>
+              <h3 class="offer__list-title">Desglose del pack</h3>
               <ul class="offer__list">
                 <li>Tres videos cortos (formato digital)</li>
                 <li>El Método del Perro que Habla (PDF)</li>
@@ -416,16 +445,22 @@
                 <li>Bonus: guías Mundo Peludo (PDF)</li>
                 <li>Reto 21 días y guía de compras (PDF)</li>
               </ul>
-              <a class="btn btn--wide btn--cta checkout-link" href="#" id="hotmart-link"
-                >Quiero que mi perro me obedezca ya <span class="btn__emoji" aria-hidden="true">🐶</span></a
+              <a class="btn btn--wide btn--cta btn--yell checkout-link" href="#" id="hotmart-link"
+                ><span class="btn__label">Quiero que mi perro me obedezca ya</span>
+                <span class="btn__emoji" aria-hidden="true">🐶🔥</span></a
               >
               <p class="offer__hint">
-                Al hacer clic irás al checkout seguro de Hotmart. La compra queda sujeta a los
+                Al hacer clic irás al <strong>checkout seguro de Hotmart</strong> (no pagas en esta web). La compra queda
+                sujeta a los
                 <a href="https://www.hotmart.com/legal/es/purchase-terms" target="_blank" rel="noopener noreferrer"
                   >términos generales de compra</a
                 >
                 de Hotmart.
               </p>
+              <a class="btn btn--wide btn--cta btn--yell checkout-link" href="#"
+                ><span class="btn__label">Quiero que mi perro me obedezca ya</span>
+                <span class="btn__emoji" aria-hidden="true">🐶🔥</span></a
+              >
             </div>
           </div>
         </div>
@@ -439,8 +474,9 @@
             checkout seguro, descarga al pagar. Si te encaja, nos escribes en Facebook y ayudas a otros a decidir con datos
             reales.
           </p>
-          <a class="btn btn--large checkout-link" href="#" id="hotmart-link-cta"
-            >Quiero que mi perro me obedezca ya <span class="btn__emoji" aria-hidden="true">🔥</span></a
+          <a class="btn btn--large btn--yell checkout-link" href="#" id="hotmart-link-cta"
+            ><span class="btn__label">Quiero que mi perro me obedezca ya</span>
+            <span class="btn__emoji" aria-hidden="true">🐶🔥</span></a
           >
         </div>
       </section>
