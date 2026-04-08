@@ -1055,3 +1055,119 @@ a {
 .footer__nav a:hover {
   color: var(--color-navy);
 }
+
+/* Landing final (copy único) */
+.hero__lead--final {
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  font-weight: 600;
+  color: var(--color-navy-mid);
+  max-width: 48ch;
+}
+
+.urgency-strip--final {
+  font-size: 0.875rem;
+}
+
+.final-block {
+  max-width: min(40rem, 100%);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.final-block__text {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--color-ink);
+}
+
+.final-block__text p {
+  margin: 0 0 0.75rem;
+}
+
+.final-block__text p:last-child {
+  margin-bottom: 0;
+}
+
+.final-block__lead {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--color-muted);
+  max-width: 52ch;
+  margin-inline: auto;
+}
+
+.final-block__subtitle {
+  margin: 0 0 1rem;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.final-bullet-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 36rem;
+  text-align: left;
+}
+
+.final-bullet-list li {
+  position: relative;
+  margin-bottom: 0.65rem;
+  padding-left: 1.5rem;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  color: var(--color-muted);
+}
+
+.final-bullet-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-gold);
+  font-weight: 800;
+}
+
+.final-bullet-list--tight li:last-child {
+  margin-bottom: 0;
+}
+
+.final-note {
+  margin-top: 1.5rem !important;
+  font-size: 0.9375rem !important;
+}
+
+.benefits-checklist {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 32rem;
+}
+
+.benefits-checklist li {
+  position: relative;
+  margin-bottom: 0.85rem;
+  padding-left: 2rem;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  color: var(--color-muted);
+}
+
+.benefits-checklist li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+}
+
+.benefits-checklist li:last-child {
+  margin-bottom: 0;
+}
+
+.guarantee__secure {
+  margin: 0 0 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-navy);
+}
