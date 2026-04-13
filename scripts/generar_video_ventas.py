@@ -71,7 +71,7 @@ Te presentamos Mundo Peludo. Es un pack digital para acercarte a su lenguaje, y 
     """No se trata solo de leer y cerrar el PDF. Lo que buscamos es un camino ordenado: método, profundidad, guías prácticas y retos.
 Así lo que aprendas no se queda solo en teoría.""",
     """Aquí entra el enfoque del Método del Perro que Habla. Sirve para entender y potenciar la comunicación con tu mascota,
-con ideas sobre lenguaje y botones de comunicación, cuando encajan en tu caso.""",
+con ideas sobre lenguaje y botones físicos de habla para perros, cuando encajan en tu caso. No tiene nada que ver con redes sociales: son pulsadores que el perro usa en casa.""",
     """También está el Código Maestro de la Mente Canina. Ahí profundizamos en cómo piensa y se comporta,
 y te acompañamos en el entrenamiento y en la convivencia de verdad.""",
     """Además vienen los bonus en PDF: longevidad, primeros auxilios, vocabulario útil, según tu compra.
