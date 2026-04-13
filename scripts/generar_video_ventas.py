@@ -58,7 +58,7 @@ SCENES: List[Tuple[str, str, str]] = [
     ("slide", "Obra nuestra", "Precio honesto · sin intermediarios"),
     ("slide", "Tu opinión importa", "Revisiones · temas · promociones · sorteos"),
     ("slide", "Vuestras mascotas", "Protagonistas: fotos e historias reales"),
-    ("slide", "Comunidad transparente", "Sin seguidores ficticios · diálogo real"),
+    ("slide", "Proyecto transparente", "Diálogo honesto · sin postureo"),
     ("slide", "Gracias por confiar", "Quienes apoyan el proyecto con nosotros"),
     ("slide", "Vosotros decís", "Encuestas: salud, entreno, convivencia…"),
     ("slide", "Consejos que suman", "Comentarios para mejorar el material"),
@@ -80,18 +80,18 @@ Y el reto de veintiún días, más una guía de compras, para aplicar sin adivin
     """Todo esto es obra nuestra. Por eso podemos ofrecer un precio justo para el pack digital,
 sin intermediarios. Apostamos por la honestidad y por el valor del contenido.""",
     """Tu opinión nos importa de verdad. Con vuestros comentarios podremos plantear nuevas revisiones del material,
-profundizar en lo que os interese, y diseñar promociones futuras. Y no lo decimos por decir: entre quienes nos siguen con cariño,
+profundizar en lo que os interese, y diseñar promociones futuras. Y no lo decimos por decir: entre quienes confían en el material con cariño,
 no descartamos regalar algunos de nuestros próximos libros, en sorteos o dinámicas en la página.""",
     """Nos encantaría que vuestras mascotas fueran protagonistas en Mundo Peludo: fotos, historias, vuestra voz.
 Queremos un espacio compartido de verdad, no de postureo.""",
-    """Mundo Peludo apuesta por un espacio transparente: no buscamos inflar números ni seguidores de mentira.
+    """Mundo Peludo apuesta por la transparencia: no buscamos inflar números ni apariencias vacías.
 Queremos conversación sincera, con personas reales detrás del proyecto.""",
-    """Valoramos mucho a los primeros seguidores que se acercan ahora. Sois quienes nos ayudáis a construir el proyecto desde el principio,
+    """Valoramos a las primeras personas que confían en el proyecto. Sois quienes nos ayudáis a construir desde el principio,
 con confianza, y con crítica cuando haga falta.""",
     """Con vuestra participación haremos encuestas y trataremos temas que os importen: entrenamiento, salud, alimentación, convivencia.
 Así los contenidos y las ediciones futuras pueden ir más alineados con vosotros.""",
     """Compartiremos consejos prácticos. Leeremos opiniones. Y tendremos en cuenta los comentarios que suman,
-para revisar el material, profundizar donde haga falta, y plantear promociones justas. También, cuando podamos, libros gratis para seguidores en sorteos o premios.""",
+para revisar el material, profundizar donde haga falta, y plantear promociones justas. También, cuando podamos, libros gratis en sorteos o premios para quienes participan.""",
     """Soñamos con ver vuestras mascotas en la página. Creemos que compartir con respeto mejora un poco el mundo,
 empezando por quienes nos dan la patita. Si te encaja, en Hotmart completas la compra: PDF y vídeos del pack, más las guías y el reto.
 Esperamos que nuestra autoría sea de tu agrado. Déjanos comentarios, y cuéntanos qué te gustaría ver después. Gracias por estar ahí.""",

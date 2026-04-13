@@ -15,43 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Meta Pixel — Identificador del conjunto de datos “Píxel Mundo Peludo” -->
-    <script>
-      window.META_PIXEL_ID = "1140730384798691";
-    </script>
-    <script>
-      (function () {
-        var id = window.META_PIXEL_ID;
-        if (!id || !/^\d{10,20}$/.test(String(id))) return;
-        !(function (f, b, e, v, n, t, s) {
-          if (f.fbq) return;
-          n = f.fbq = function () {
-            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-          };
-          if (!f._fbq) f._fbq = n;
-          n.push = n;
-          n.loaded = !0;
-          n.version = "2.0";
-          n.queue = [];
-          t = b.createElement(e);
-          t.async = !0;
-          t.src = v;
-          s = b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t, s);
-        })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-        fbq("init", id);
-        fbq("track", "PageView");
-      })();
-    </script>
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=1140730384798691&ev=PageView&noscript=1"
-        alt=""
-      />
-    </noscript>
   </head>
   <body>
     <header class="site-header">
@@ -64,7 +27,7 @@
           <a href="#beneficios">Beneficios</a>
           <a href="#video-ventas">Video</a>
           <a href="#autoria">Nuestra obra</a>
-          <a href="#comunidad">Comunidad</a>
+          <a href="#comunidad">Tu opinión</a>
           <a href="#oferta">Oferta</a>
         </nav>
         <a class="btn btn--small checkout-link" href="#">Quiero el pack</a>
@@ -120,7 +83,7 @@
               preload="metadata"
               poster="images/mega-pack.png"
             >
-              <source src="media/video-ventas.mp4?v=6" type="video/mp4" />
+              <source src="media/video-ventas.mp4?v=7" type="video/mp4" />
               Tu navegador no soporta video HTML5.
             </video>
           </div>
@@ -239,8 +202,8 @@
             <p>
               <strong>Tu opinión nos importa.</strong> Con vuestros comentarios podremos plantear
               <strong>nuevas revisiones</strong> del material, profundizar en <strong>temas que os interesen</strong> y
-              diseñar <strong>futuras promociones</strong>. No descartamos regalar, entre quienes nos siguen con interés real,
-              <strong>algunos de nuestros próximos libros</strong> como premio en sorteos o dinámicas en la página.
+              diseñar <strong>futuras promociones</strong>. No descartamos regalar, entre quienes compran con interés real,
+              <strong>algunos de nuestros próximos libros</strong> como premio en sorteos o dinámicas en esta web.
             </p>
             <p>
               Nos encantaría que <strong>vuestras mascotas fueran protagonistas</strong> en la página de Mundo Peludo:
@@ -253,25 +216,28 @@
 
       <section class="section community" id="comunidad">
         <div class="container">
-          <h2 class="section__title">Comunidad Mundo Peludo</h2>
+          <h2 class="section__title">Tu opinión y el proyecto</h2>
           <p class="section__intro">
-            No buscamos <strong>seguidores ficticios</strong> ni inflar cifras: queremos un criterio
-            <strong>transparente</strong> y conversación real con quienes confían en Mundo Peludo y quieren aportar
-            comentarios sinceros.
+            Queremos un criterio <strong>transparente</strong> y diálogo honesto con quienes confían en Mundo Peludo y en
+            el material: sin inflar cifras ni apariencias.
           </p>
           <ul class="community__list">
             <li>
-              <strong>Encuestas y temas:</strong> queremos saber qué os interesa (entrenamiento, salud, alimentación,
+              <strong>Encuestas y temas:</strong> nos interesa saber qué os importa (entrenamiento, salud, alimentación,
               convivencia…) para preparar contenidos y futuras ediciones alineadas con vosotros.
             </li>
             <li>
-              <strong>Consejos y diálogo:</strong> compartimos ideas prácticas y leemos vuestras opiniones para seguir mejorando el material y la página.
+              <strong>Consejos y diálogo:</strong> compartimos ideas prácticas y valoramos vuestras opiniones para seguir
+              mejorando el material y esta web.
             </li>
             <li>
-              <strong>Comentarios que suman:</strong> vuestras aportaciones nos ayudan a plantear revisiones, temas más profundos y promociones justas; entre seguidores de verdad, valoramos también sorteos o premios con libros cuando podamos.
+              <strong>Comentarios que suman:</strong> vuestras aportaciones nos ayudan a plantear revisiones, temas más
+              profundos y promociones justas; entre quienes participan de verdad, valoramos también sorteos o premios con
+              libros cuando podamos.
             </li>
             <li>
-              Soñamos con que <strong>vuestras mascotas sean protagonistas</strong> en Mundo Peludo: vuestras fotos e historias para que el proyecto sea de todos.
+              Soñamos con que <strong>vuestras mascotas sean protagonistas</strong> en Mundo Peludo: vuestras fotos e
+              historias para que el proyecto sea de todos.
             </li>
             <li>
               Creemos que compartir con respeto hace que <strong>el mundo sea un lugar un poco mejor</strong> — empezando
@@ -358,9 +324,6 @@
       <div class="container footer__inner">
         <p class="footer__brand">© <span id="year"></span> Mundo Peludo. Todos los derechos reservados.</p>
         <nav class="footer__nav" aria-label="Pie">
-          <a href="https://www.facebook.com/profile.php?id=61584993482786" target="_blank" rel="noopener noreferrer"
-            >Facebook</a
-          >
           <a href="#inicio">Inicio</a>
         </nav>
         <p class="footer__legal">
@@ -380,27 +343,12 @@
       var HOTMART_URL = "https://pay.hotmart.com/U105220142I";
       document.querySelectorAll(".checkout-link").forEach(function (el) {
         el.setAttribute("href", HOTMART_URL);
-        el.addEventListener("click", function () {
-          if (typeof fbq === "function") {
-            fbq("track", "InitiateCheckout");
-          }
-        });
       });
       // Pon aquí el precio visible, ej. "USD 29" o "29 €". Déjalo vacío para mostrar "—".
       var PRECIO_TEXTO = "";
       var precioEl = document.getElementById("precio-display");
       if (precioEl) precioEl.textContent = PRECIO_TEXTO || "—";
 
-      var videoVentas = document.getElementById("video-ventas-player");
-      if (videoVentas) {
-        videoVentas.addEventListener(
-          "play",
-          function () {
-            if (typeof fbq === "function") fbq("trackCustom", "VideoVentasPlay");
-          },
-          { once: true }
-        );
-      }
     </script>
   </body>
 </html>
