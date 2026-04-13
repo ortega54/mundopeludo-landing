@@ -55,11 +55,11 @@ SCENES: List[Tuple[str, str, str]] = [
     ("file", "codigo-maestro.png", ""),
     ("slide", "Bonus PDF + reto 21 días", "Guías útiles y guía de compras"),
     ("slide", "Reto 21 días", "Plan práctico para aplicar el método con tu mascota"),
-    ("slide", "Obra nuestra", "Precio de inauguración · honestidad"),
+    ("slide", "Obra nuestra", "Precio honesto · sin intermediarios"),
     ("slide", "Tu opinión importa", "Revisiones · temas · promociones · sorteos"),
     ("slide", "Vuestras mascotas", "Protagonistas: fotos e historias reales"),
-    ("slide", "Comunidad transparente", "Sin seguidores ficticios · Facebook"),
-    ("slide", "Gracias por confiar", "Primeros seguidores que construyen con nosotros"),
+    ("slide", "Comunidad transparente", "Sin seguidores ficticios · diálogo real"),
+    ("slide", "Gracias por confiar", "Quienes apoyan el proyecto con nosotros"),
     ("slide", "Vosotros decís", "Encuestas: salud, entreno, convivencia…"),
     ("slide", "Consejos que suman", "Comentarios para mejorar el material"),
     ("slide", "Compra en Hotmart", "PDF · vídeos · reto y guías · te leemos"),
@@ -77,18 +77,18 @@ y te acompañamos en el entrenamiento y en la convivencia de verdad.""",
     """Además vienen los bonus en PDF: longevidad, primeros auxilios, vocabulario útil, según tu compra.
 Y el reto de veintiún días, más una guía de compras, para aplicar sin adivinar.""",
     """Con el calendario del reto y las guías, pasas de leer a hacer: pasos concretos para que el método se note en el día a día con tu mascota.""",
-    """Todo esto es obra nuestra. Por eso podemos ofrecer un precio especial de inauguración.
-Celebramos el lanzamiento, y el arranque de la comunidad Mundo Peludo, con honestidad.""",
+    """Todo esto es obra nuestra. Por eso podemos ofrecer un precio justo para el pack digital,
+sin intermediarios. Apostamos por la honestidad y por el valor del contenido.""",
     """Tu opinión nos importa de verdad. Con vuestros comentarios podremos plantear nuevas revisiones del material,
 profundizar en lo que os interese, y diseñar promociones futuras. Y no lo decimos por decir: entre quienes nos siguen con cariño,
 no descartamos regalar algunos de nuestros próximos libros, en sorteos o dinámicas en la página.""",
     """Nos encantaría que vuestras mascotas fueran protagonistas en Mundo Peludo: fotos, historias, vuestra voz.
 Queremos un espacio compartido de verdad, no de postureo.""",
-    """Este lanzamiento va junto a la inauguración de nuestra página en Facebook. No buscamos inflar números, ni seguidores de mentira.
-Queremos una página transparente, con personas reales detrás, y conversación sincera.""",
+    """Mundo Peludo apuesta por un espacio transparente: no buscamos inflar números ni seguidores de mentira.
+Queremos conversación sincera, con personas reales detrás del proyecto.""",
     """Valoramos mucho a los primeros seguidores que se acercan ahora. Sois quienes nos ayudáis a construir el proyecto desde el principio,
 con confianza, y con crítica cuando haga falta.""",
-    """Allí haremos encuestas, y trataremos temas que os importen: entrenamiento, salud, alimentación, convivencia.
+    """Con vuestra participación haremos encuestas y trataremos temas que os importen: entrenamiento, salud, alimentación, convivencia.
 Así los contenidos y las ediciones futuras pueden ir más alineados con vosotros.""",
     """Compartiremos consejos prácticos. Leeremos opiniones. Y tendremos en cuenta los comentarios que suman,
 para revisar el material, profundizar donde haga falta, y plantear promociones justas. También, cuando podamos, libros gratis para seguidores en sorteos o premios.""",
