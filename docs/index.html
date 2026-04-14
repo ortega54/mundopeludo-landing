@@ -386,8 +386,8 @@
           }
         });
       });
-      // Pon aquí el precio visible, ej. "USD 29" o "29 €". Déjalo vacío para mostrar "—".
-      var PRECIO_TEXTO = "";
+      // Precio orientativo (el importe final lo confirma Hotmart en el checkout, con impuestos si aplican).
+      var PRECIO_TEXTO = "25 USD";
       var precioEl = document.getElementById("precio-display");
       if (precioEl) precioEl.textContent = PRECIO_TEXTO || "—";
 
